@@ -1,0 +1,14 @@
+<%= simple_form_for @teaching_assistant do |form| %>
+  <%= form.input :name %>
+  <%= form.input :email %>
+  <%= form.input :gender %>
+  <%= form.input :experience %>
+  <%= form.input :bio %>
+  <%= form.input :company %>
+  <%= form.input :operating_systems, as: :check_boxes,
+                 collection: TeachingAssistant::OPERATING_SYSTEMS %>
+  <%= form.input :other_information %>
+  <%= form.input :past_experience, as: :select,
+                 collection: TeachingAssistant::EXPERIENCES %>
+  <%= form.button :submit, 'Submit Application' %>
+<% end %>
