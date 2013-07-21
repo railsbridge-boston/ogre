@@ -5,6 +5,7 @@
 
 bundle install --binstubs=bin/stubs
 bundle exec rake db:setup
+bundle exec rake db:migrate db:test:prepare
 
 if [ ! -f .env ]; then
   cp .sample.env .env

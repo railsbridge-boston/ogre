@@ -1,6 +1,14 @@
-You look great in Suspenders
-============================
+# Ogre
 
+### Development Setup
+
+```
+git clone git@github.com:railsbridgeboston/ogre.git
+cd ogre
+bin/setup
+```
+
+### Guides
 Use the following guides for getting things done, programming well, and
 programming in style.
 
