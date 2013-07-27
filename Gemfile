@@ -2,6 +2,14 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
+# activeadmin
+gem 'devise',              github: 'plataformatec/devise'
+gem 'responders',          github: 'plataformatec/responders'
+gem 'inherited_resources', github: 'josevalim/inherited_resources'
+gem 'ransack',             github: 'ernie/ransack', branch: 'rails-4'
+gem 'activeadmin',         github: 'gregbell/active_admin', branch: 'rails4'
+gem 'formtastic',          github: 'justinfrench/formtastic'
+
 gem 'airbrake'
 gem 'bourbon'
 gem 'delayed_job_active_record', '>= 4.0.0.beta2'
@@ -16,11 +24,9 @@ gem 'recipient_interceptor'
 gem 'simple_form'
 gem 'unicorn'
 
-group :assets do
-  gem 'coffee-rails'
-  gem 'sass-rails'
-  gem 'uglifier'
-end
+gem 'coffee-rails'
+gem 'sass-rails'
+gem 'uglifier'
 
 group :development do
   gem 'foreman'
